@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TasksActivity"
+    android:background="#E3F8FF">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/List_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/list_title"
+        android:textColor="#00BCFF"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:elevation="10dp"
+        android:layout_alignParentTop="true"
+        android:shadowColor="#C0C0C0"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Add_task_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add_task_n"
+        android:importantForAccessibility="yes"
+        android:src="@drawable/baseline_add_white"
+        android:layout_margin="16dp"
+        android:backgroundTint="#61D4FD"
+
+        app:fabCustomSize="64dp"
+        android:elevation="19dp"
+        app:hoveredFocusedTranslationZ="8dp"
+        app:rippleColor="#E3F8FF"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/task_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/List_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:hint="@string/add_task"
+        android:textAlignment="gravity"
+        android:textColorHint="#00BFFF"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="#00BFFF"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="5dp"
+        app:hintTextColor="#00BFFF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Add_task_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/List_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_task_btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_edit_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="148dp"
+        android:backgroundTint="#00C1FF"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="#D1EDF6"
+        android:textSize="15sp"
+        app:cornerRadius="60dp"
+        app:rippleColor="#00C1FF"
+        app:strokeColor="#D1EDF6"
+        app:strokeWidth="1.6dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Task_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save_task_btn"
+        android:elevation="18dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="5dp"
+        />
+
+</RelativeLayout>
