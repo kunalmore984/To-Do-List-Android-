@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">To-Do-List</string>
+    <string name="hello_world">Hello World</string>
+    <string name="add_list">List</string>
+    <string name="to_do_list">TO DO LIST</string>
+    <string name="add_list_name">Add list name</string>
+    <string name="save">save</string>
+    <string name="list_name_place_holder">List Name Place Holder</string>
+    <string name="task">Task</string>
+    <string name="list_title">List Title</string>
+    <string name="task_name">Task name</string>
+    <string name="add_task_name">Add task name</string>
+    <string name="add_task">Add task</string>
+    <string name="done">Done</string>
+    <string name="list_name">List Name</string>
+    <string name="delete">delete</string>
+    <string name="add_task_n">Add Task</string>
+</resources>
