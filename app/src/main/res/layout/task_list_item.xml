@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/tsk_del_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:buttonTint="#01BCFF"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tsk_del_button"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/divider"
+            android:textColor="@color/black"
+            />
+
+</RelativeLayout>
